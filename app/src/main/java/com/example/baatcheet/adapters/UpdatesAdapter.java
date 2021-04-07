@@ -69,7 +69,7 @@ public class UpdatesAdapter extends RecyclerView.Adapter<UpdatesAdapter.ViewHold
                             });
                         }
                     });
-                    holder.reject.setOnClickListener(new View.OnClickListener() {
+                    holder.cancel.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             ref.collection("Friend Requests").document("Requested")
@@ -97,7 +97,7 @@ public class UpdatesAdapter extends RecyclerView.Adapter<UpdatesAdapter.ViewHold
         TextView name;
         TextView phone;
         TextView email;
-        ImageButton accept,reject;
+        ImageButton accept,cancel;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -105,7 +105,7 @@ public class UpdatesAdapter extends RecyclerView.Adapter<UpdatesAdapter.ViewHold
             phone = itemView.findViewById(R.id.textview_rc_phone);
             email = itemView.findViewById(R.id.textview_rc_email);
             accept = itemView.findViewById(R.id.acceptReq);
-            reject = itemView.findViewById(R.id.rejectReq);
+            cancel = itemView.findViewById(R.id.rejectReq);
         }
     }
 }
