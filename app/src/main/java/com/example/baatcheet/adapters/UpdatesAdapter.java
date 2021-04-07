@@ -69,6 +69,19 @@ public class UpdatesAdapter extends RecyclerView.Adapter<UpdatesAdapter.ViewHold
                             });
                         }
                     });
+                    holder.reject.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            ref.collection("Friend Requests").document("Requested")
+                                    .collection(FirebaseAuth.getInstance().getUid()).document(keys.get(position))
+                                    .delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+
+                                }
+                            });
+                        }
+                    });
                 }
             }
         });
