@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/back_32"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Profile"
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/rect_black_128"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jatin Singh Gill"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Email"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jatin.singhgill@gmail.com"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="DOB"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/01/2000"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="About"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi my name is Jatin Singh Gill , I am currently learning android app development from Tarandeep sir."
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Edit Profile"
+            android:fontFamily="@font/dosis_semibold"
+            android:background="@drawable/rect_4"
+            style="@style/Button.Transparent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
